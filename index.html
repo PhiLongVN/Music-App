@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <!-- 1 -->
+        <div class="headerTitle">
+          <i class="fa-solid fa-arrow-down"></i>
+          <div class="nameBox">
+            <span>Now Playing</span>
+            <span class="name"></span>
+          </div>
+          
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <!-- 2 -->
+        <div class="headderImage">
+          <div class="avatar"></div>
+        </div>
+        <!-- 3 -->
+        <div class="headerControl">
+          <div class="controlBtn">
+            <i class="fa-solid fa-repeat"></i>
+            <i class="fa-solid fa-backward"></i>
+            <div class="control">
+              <i class="fa-solid fa-play"></i>
+              <i class="fa-solid fa-pause"></i>
+            </div>
+            <i class="fa-solid fa-forward"></i>
+            <i class="fa-solid fa-shuffle "></i>
+          </div>
+
+          <div class="controlBtnSecond">
+            <div class="volume">
+              <div class="volumeIcon">
+                <i class="fa-solid fa-volume-high"></i>
+                <i class="fa-solid fa-volume-xmark"></i>
+              </div>
+              <input class="volumeBar" type="range" step="0.1" max="1" min="0" value="1">
+            </div>
+            <div class="tua">
+              <i class="fa-solid fa-minus minus "></i>
+              <i class="fa-solid fa-plus plus "></i>
+            </div>
+            <div class="speed">
+              <div class="numspeed">x1</div>
+              <i class="fa-solid fa-gauge"></i>
+              <div class="speedTable">
+                <ul>
+                 <li class="speedOp" data-speed="0.5" >0.5</li>
+                 <li class="speedOp" data-speed="0.75">0.75</li>
+                 <li class="speedOp" data-speed="1">1</li>
+                 <li class="speedOp" data-speed="1.25">1.25</li>
+                 <li class="speedOp" data-speed="1.5">1.5</li>
+                 <li class="speedOp" data-speed="2">2</li>
+                 
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="controlPro">
+            <input  type ='range' class="progress" value="0" min="1" max="100"></input>
+            <div class="mucsicTime">
+              <div class="currentTime"></div>
+            
+              <div class="duration"></div>
+            </div>
+          </div>
+          <div class="up" >
+            <div class="line"></div>
+            <span>
+              Up next
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <section class="listSongs">
+       
+      </section>
+    </div>
+    <audio  class="audio" src=""></audio>
+  </body>
+  <script  type="module" src="./script.js"></script>
+  <script src="https://kit.fontawesome.com/b7d72fdb1c.js" crossorigin="anonymous"></script>
+  </html>
